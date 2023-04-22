@@ -1,7 +1,7 @@
-word=""
+
+word=input("Enter a word, and I will determine if it is a palindrome or not: ")
 
 while word!="n":
-    word=input("Enter a word, and I will determine if it is a palindrome or not: ")
 
     reverse=""
 
@@ -16,3 +16,4 @@ while word!="n":
         print("It is not a palindrome!")
     
     print("Enter 'n' to stop")
+    word=input("Enter a word, and I will determine if it is a palindrome or not: ")
