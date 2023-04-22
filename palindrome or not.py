@@ -1,13 +1,18 @@
-word=input("Enter a word, and I will determine if it is a palindrome or not: ")
+word=""
 
-reverse=""
+while word!="n":
+    word=input("Enter a word, and I will determine if it is a palindrome or not: ")
 
-for x in range(len(word)-1, -1, -1):
-    reverse+=word[x]
+    reverse=""
 
-print(f"In reverse it is {reverse}")
+    for x in range(len(word)-1, -1, -1):
+        reverse+=word[x]
 
-if reverse==word:
-    print("It is a palindrome!")
-else:
-    print("It is not a palindrome!")
+    print(f"In reverse it is {reverse}")
+
+    if reverse==word:
+        print("It is a palindrome!")
+    else:
+        print("It is not a palindrome!")
+    
+    print("Enter 'n' to stop")
